@@ -755,10 +755,10 @@ internal struct Regexes {
 		],[.r(.name),.r(.version)]),
 		Rule([
 			"(cros)\\s[\\w]+\\s([\\w\\.]+\\w)", // Chromium OS
-		],[.rf(.name,"chromium os"),.r(.version)]),
+		],[.rf(.name,"Chromium OS"),.r(.version)]),
 		Rule([
 			"(sunos)\\s?([\\w\\.]+\\d)*", // Solaris
-		],[.rf(.name,"solaris"),.r(.version)]),
+		],[.rf(.name,"Solaris"),.r(.version)]),
 		Rule([
 			// BSD based
 			"\\s([frentopc-]{0,4}bsd|dragonfly)\\s?([\\w\\.]+)*", // FreeBSD/NetBSD/OpenBSD/PC-BSD/DragonFly
@@ -769,7 +769,7 @@ internal struct Regexes {
 		Rule([
 			"cfnetwork\\/.+darwin",
 			"ip[honead]+(?:.*os\\s([\\w]+)\\slike\\smac|;\\sopera)", // iOS
-		],[.rp(.version,"_", "."),.rf(.name,"ios")]),
+		],[.rp(.version,"_", "."),.rf(.name,"iOS")]),
 		Rule([
 			"(mac\\sos\\sx)\\s?([\\w\\s\\.]+\\w)*",
 			"(macintosh|mac(?=_powerpc)\\s)" // Mac OS
