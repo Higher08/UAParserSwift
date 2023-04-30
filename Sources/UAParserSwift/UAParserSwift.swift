@@ -720,11 +720,11 @@ internal struct Regexes {
 		],[.r(.name),.mp(.version,WindowsOSMap())]),
 		Rule([
 			"(win(?=3|9|n)|win\\s9x\\s)([nt\\d\\.]+)", // Windows
-		],[.rf(.name,"windows"),.mp(.version,WindowsOSMap())]),
+		],[.rf(.name,"Windows"),.mp(.version,WindowsOSMap())]),
 		Rule([
 			// Mobile/Embedded OS
 			"\\((bb)(10);" // BlackBerry 10
-		],[.rf(.name,"blackberry"),.r(.version)]),
+		],[.rf(.name,"Blackberry"),.r(.version)]),
 		Rule([
 			"(blackberry)\\w*\\/?([\\w\\.]+)*",  // Blackberry
 			"(tizen)[\\/\\s]([\\w\\.]+)", // Tizen
@@ -733,13 +733,13 @@ internal struct Regexes {
 		],[.r(.name),.r(.version)]),
 		Rule([
 			"(symbian\\s?os|symbos|s60(?=;))[\\/\\s-]?([\\w\\.]+)*", // Symbian
-		],[.rf(.name,"symbian"),.r(.version)]),
+		],[.rf(.name,"Symbian"),.r(.version)]),
 		Rule([
 			"\\((series40);", // Series 40
 		],[.r(.name)]),
 		Rule([
 			"mozilla.+\\(mobile;.+gecko.+firefox", // Firefox OS
-		],[.rf(.name,"firefox os"),.r(.version)]),
+		],[.rf(.name,"Firefox OS"),.r(.version)]),
 		Rule([
 			// Console
 			"(nintendo|playstation)\\s([wids34portablevu]+)", // Nintendo/Playstation
@@ -773,7 +773,7 @@ internal struct Regexes {
 		Rule([
 			"(mac\\sos\\sx)\\s?([\\w\\s\\.]+\\w)*",
 			"(macintosh|mac(?=_powerpc)\\s)" // Mac OS
-		],[.rf(.name,"mac os"),.rp(.version,"_",".")]),
+		],[.rf(.name,"Mac OS"),.rp(.version,"_",".")]),
 		Rule([
 			// Other
 			"((?:open)?solaris)[\\/\\s-]?([\\w\\.]+)*", // Solaris
